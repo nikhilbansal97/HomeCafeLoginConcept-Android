@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var vkAnimator: ValueAnimator
     private lateinit var googleAnimator: ValueAnimator
     private lateinit var facebookAnimator: ValueAnimator
-    private val animationDuration = 800L
+    private val animationDuration = 1000L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
         val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
         loginMarginAnimator = ValueAnimator.ofInt(20, 80).apply {
-            duration = 350
+            duration = 500
             addUpdateListener {
                 params.topMargin = it.animatedValue as Int
                 params.leftMargin = 50
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         loginAlphaAnimator = ValueAnimator.ofFloat(0f, 1f).apply {
-            duration = 350
+            duration = 500
             addUpdateListener {
                 loginButton.alpha = it.animatedValue as Float
             }
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
         val signUpParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
         signupMarginAnimator = ValueAnimator.ofInt(10, 60).apply {
-            duration = 350
+            duration = 500
             addUpdateListener {
                 signUpParams.topMargin = it.animatedValue as Int
                 signUpParams.leftMargin = 50
@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         signupAlphaAnimator = ValueAnimator.ofFloat(0f, 1f).apply {
-            duration = 350
+            duration = 500
             addUpdateListener {
                 signUpButton.alpha = it.animatedValue as Float
             }
@@ -132,13 +132,13 @@ class MainActivity : AppCompatActivity() {
 
         chefLoginAnimatorSet = AnimatorSet().apply {
             play(chefImageAlphaAnimator).with(chefImageYAxisAnimator)
-            play(loginMarginAnimator).with(loginAlphaAnimator).after(500)
-            play(signupMarginAnimator).with(signupAlphaAnimator).after(700)
-            play(connectWithAlphaAnimator).after(800)
-            play(instagramAnimator).after(1000)
-            play(vkAnimator).after(1100)
-            play(googleAnimator).after(1200)
-            play(facebookAnimator).after(1300)
+            play(loginMarginAnimator).with(loginAlphaAnimator).after(800)
+            play(signupMarginAnimator).with(signupAlphaAnimator).after(1100)
+            play(connectWithAlphaAnimator).after(1300)
+            play(instagramAnimator).after(1500)
+            play(vkAnimator).after(1600)
+            play(googleAnimator).after(1700)
+            play(facebookAnimator).after(1800)
         }
     }
 
