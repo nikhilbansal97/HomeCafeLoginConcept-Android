@@ -4,4 +4,4 @@ This is an android implementation of the login concept made by [Kristina Art](ht
 
 ### Concept
 
-![concept-gif](https://assets.materialup.com/uploads/d2c39853-0456-4a28-9abf-31f90728ad7b/preview.gif)
+![concept-gif](assets/preview.gif)
