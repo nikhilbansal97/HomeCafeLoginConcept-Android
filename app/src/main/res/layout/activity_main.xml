@@ -20,13 +20,59 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/logo" />
 
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Welcome!"
+            android:textStyle="bold"
+            android:alpha="0"
+            android:textColor="#424242"
+            android:layout_gravity="center_horizontal"
+            android:textSize="32sp"/>
+
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="80dp"
+            android:alpha="0"
+            android:layout_marginEnd="80dp"
+            android:textColor="@android:color/black"
+            android:hint="Input your e-mail"/>
+
+        <LinearLayout
+            android:id="@+id/passwordContainer"
+            android:layout_width="match_parent"
+            android:alpha="0"
+            android:layout_height="0dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:hint="Your password goes here."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:gravity="end"
+                android:textColor="@android:color/holo_blue_dark"/>
+
+        </LinearLayout>
+
         <Button
             android:id="@+id/loginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="80dp"
             android:alpha="0"
-            android:layout_marginEnd="50dp"
+            android:layout_marginEnd="80dp"
             android:background="@drawable/login_button_background"
             android:text="Log in"/>
 
@@ -34,8 +80,8 @@
             android:id="@+id/signUpButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
             android:alpha="0"
             android:text="Sign up"
             android:background="@drawable/signup_button_background"/>
