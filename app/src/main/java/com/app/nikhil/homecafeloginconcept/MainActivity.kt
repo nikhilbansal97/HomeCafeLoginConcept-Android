@@ -281,14 +281,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun showWelcomeAnimation() {
         val emailAlphaAnimator = ValueAnimator.ofFloat(1f, 0f).apply {
-            duration = 200
+            duration = 600
             addUpdateListener {
                 emailEditText.alpha = it.animatedValue as Float
             }
         }
 
         val passwordAlphaAnimator = ValueAnimator.ofFloat(1f, 0f).apply {
-            duration = 200
+            duration = 600
             addUpdateListener {
                 passwordContainer.apply {
                     alpha = it.animatedValue as Float
@@ -298,7 +298,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         loginAlphaAnimator = ValueAnimator.ofFloat(1f, 0f).apply {
-            duration = 200
+            duration = 600
             addUpdateListener {
                 loginButton.alpha = it.animatedValue as Float
             }
